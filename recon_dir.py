@@ -14,8 +14,8 @@ def recon_dir(file_name, target_url):
 		directory = line.strip()
 		full_url = target_url + '/' + directory
 		response = request(full_url)
-		if response:
-			print('[+] Discovered Directory At This Path: ' + full_url)
+	if response:
+		print('[+] Discovered Directory At This Path: ' + full_url)
 
 
 if __name__ == '__main__':
